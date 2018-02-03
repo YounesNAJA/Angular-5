@@ -4,3 +4,4 @@
   <p> {{ serverName }} </p>
 <input type="text" [value]="serverStatus"/>
 <input type="button" [value]="serverStatus"/>
+<p [ngClass]="{online: serverStatus === 'online'}" [ngStyle]="{backgroundColor : getColor()}">{{ serverStatus }}</p>
