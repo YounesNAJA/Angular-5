@@ -1,0 +1,6 @@
+<p>Server Component! Server with ID {{ serverId }} is {{ getServerStatus() }}</p>
+<label>Server Name</label>
+  <input type='text' class="form-control" (input)="onUpdateServerName($event)" />
+  <p> {{ serverName }} </p>
+<input type="text" [value]="serverStatus"/>
+<input type="button" [value]="serverStatus"/>
